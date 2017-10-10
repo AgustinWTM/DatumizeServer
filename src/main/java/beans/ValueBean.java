@@ -35,7 +35,8 @@ public class ValueBean extends ValueCRUD{
 
     private void instanceSetReady(){
         if(value == 0l){
-            setValue(Long.valueOf(valueReader()));
+//            setValue(Long.valueOf(valueReader()));
+            setValue(0l);
         }
 //        this.preserveThread = new Thread(autoPreserveTask());
 //        this.preserveCaller();
