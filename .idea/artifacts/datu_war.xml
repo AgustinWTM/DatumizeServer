@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="datu:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="datu-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="datu:war exploded" />
+    </root>
+  </artifact>
+</component>
