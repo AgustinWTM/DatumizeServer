@@ -4,7 +4,7 @@ import javax.jws.WebService;
 import javax.xml.ws.Endpoint;
 
 @WebService()
-public class HelloWorld {
+public class Main {
   @WebMethod
   public String sayHelloWorldFrom(String from) {
     String result = "Hello, world, from " + from;
@@ -12,8 +12,8 @@ public class HelloWorld {
     return result;
   }
   public static void main(String[] argv) {
-    Object implementor = new HelloWorld ();
-    String address = "http://localhost:9000/HelloWorld";
+    Object implementor = new Main();
+    String address = "http://localhost:9000/Main";
     Endpoint.publish(address, implementor);
   }
 }
